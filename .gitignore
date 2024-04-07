@@ -1,6 +1,7 @@
 # folders
 env
 bi_site/migrations
+__pycache__
 
 
 
