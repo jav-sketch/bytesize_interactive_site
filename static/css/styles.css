@@ -10,13 +10,17 @@
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 200px;
+    text-decoration: none;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .nav-item:hover .popup-menu {
     display: block;
+    animation: fadeInAnimation 0.5s ease-in-out forwards;
 }
 
 .popup-menu a {
@@ -28,4 +32,15 @@
 
 .popup-menu a:hover {
     background-color: #f1f1f1;
+}
+
+/* Keyframes */
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
