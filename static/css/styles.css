@@ -4,13 +4,16 @@
     position: relative;
 }
 
+.popup-menu > ul {
+    list-style-type: none;
+}
 
 
 .popup-menu {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 200px;
+    min-width: 300px;
     text-decoration: none;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
@@ -20,18 +23,20 @@
 
 .nav-item:hover .popup-menu {
     display: block;
-    animation: fadeInAnimation 0.5s ease-in-out forwards;
+    animation: fadeInAnimation 0.1s ease-in-out forwards;
 }
 
 .popup-menu a {
     color: black;
-    padding: 12px 16px;
+    padding: 20px 16px;
+    margin: auto;
     text-decoration: none;
     display: block;
 }
 
 .popup-menu a:hover {
-    background-color: #f1f1f1;
+    background-color: #3c1caf56;
+    color: white;
 }
 
 /* Keyframes */
