@@ -35,7 +35,7 @@
 }
 
 .popup-menu a:hover {
-    background-color: #3c1caf56;
+    background-color: #16102956;
     color: white;
 }
 
@@ -48,4 +48,25 @@
     to {
         opacity: 1;
     }
+}
+
+.button-pill {
+    background-color: #161029;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.button-pill:hover {
+    background-color: #23155356;
+    color: purple;
+    outline: 2px solid #161029;
+
 }
