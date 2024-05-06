@@ -51,7 +51,7 @@
 }
 
 .button-pill {
-    background-color: #161029;
+    background-color: #4009f7;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -67,8 +67,12 @@
 }
 
 .button-pill:hover {
-    background-color: #23155356;
-    color: purple;
-    outline: 2px solid #161029;
+    background-color: #3b00fc56;
+    color: rgb(255, 255, 255);
+    outline: 2px solid #f5f5f5;
 
+}
+
+.cover-container {
+    max-width: 42em;
 }
