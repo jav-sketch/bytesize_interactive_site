@@ -83,6 +83,14 @@
     padding: 25px 5px;
     margin: auto;
     border-radius: 50%;
-    /* background-color: #4009f7; */
-    border: 2px solid #7215db;
+    background-color: #3e3d3f69;
+    border: 2px solid #0c0e8b;
+}
+
+.section-height {
+    margin-top: 200px;
+}
+
+.footer-height {
+    margin-top: 300px;
 }
