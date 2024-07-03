@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{}
+{% block content %}
+<div class="container">
+    <div class="pricing-header">
+        <h1 class="display-4">Our Pricing Plans</h1>
+        <p class="lead">Choose a plan that suits your needs and budget. We offer flexible and affordable pricing options
+            for businesses of all sizes.</p>
+    </div>
+
+    <div class="row">
+        <!-- Basic Plan -->
+        <div class="col-lg-4 mb-4">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h4 class="card-title">Basic</h4>
+                    <h5 class="card-price">$9<span class="period">/mo</span></h5>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>10 GB Storage</li>
+                        <li>100 GB Bandwidth</li>
+                        <li>Email Support</li>
+                        <li>24/7 Customer Service</li>
+                    </ul>
+                    <div class="d-grid">
+                        <a href="#" class="btn btn-primary btn-block">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Standard Plan -->
+        <div class="col-lg-4 mb-4">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h4 class="card-title">Standard</h4>
+                    <h5 class="card-price">$29<span class="period">/mo</span></h5>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>100 GB Storage</li>
+                        <li>1 TB Bandwidth</li>
+                        <li>Priority Email Support</li>
+                        <li>24/7 Customer Service</li>
+                    </ul>
+                    <div class="d-grid">
+                        <a href="#" class="btn btn-primary btn-block">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="col-lg-4 mb-4">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h4 class="card-title">Premium</h4>
+                    <h5 class="card-price">$49<span class="period">/mo</span></h5>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>1 TB Storage</li>
+                        <li>Unlimited Bandwidth</li>
+                        <li>Phone & Email Support</li>
+                        <li>24/7 Premium Support</li>
+                    </ul>
+                    <div class="d-grid">
+                        <a href="#" class="btn btn-primary btn-block">Join Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

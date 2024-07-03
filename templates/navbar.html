@@ -7,7 +7,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
-                <a class="navbar-brand d-none d-lg-block" href="#">bytesize interactive</a>
+                <a class="navbar-brand d-none d-lg-block" href="{% url 'index' %}">bytesize interactive</a>
                 <!-- <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li> -->
@@ -24,13 +24,13 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="{% url 'pricing' %}">Pricing</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link"  href="#">About</a>
+                    <a class="nav-link"  href="{%url 'about' %}">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Contact</a>
+                    <a class="nav-link" href="{% url 'contact' %}">Contact</a>
                 </li>
             </ul>
         </div>
