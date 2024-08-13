@@ -8,4 +8,5 @@ __pycache__
 # files
 __init__.py
 commands.txt
-config.py
+sk.py
+.env
