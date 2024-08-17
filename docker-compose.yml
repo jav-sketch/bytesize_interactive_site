@@ -1,0 +1,25 @@
+
+services: 
+
+  db:
+    image: postgres:16.4-alpine3.20
+    restart: always
+    ports:
+     - 5433:5432
+  
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
+  # bi_site-test-db:
+  # image: postgres:16.4-alpine3.20
+  # restart: always
+  # ports:
+  #   - "5434:5432"
