@@ -26,6 +26,6 @@ class FeaturetteAdmin(admin.ModelAdmin):
 
 @admin.register(About)
 class AboutAdmin(admin.ModelAdmin):
-    list_display = ('title', 'description', 'image')
+    list_display = ('title', 'description', 'date_updated')
     list_filter = ('date_created',)
     search_fields = ('title', 'description')
