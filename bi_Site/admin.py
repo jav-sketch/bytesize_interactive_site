@@ -23,3 +23,9 @@ class FeaturetteAdmin(admin.ModelAdmin):
     list_display = ('title', 'description', 'image')
     list_filter = ('is_active', 'date_created')
     search_fields = ('title', 'description')
+
+@admin.register(About)
+class AboutAdmin(admin.ModelAdmin):
+    list_display = ('title', 'description', 'image')
+    list_filter = ('date_created',)
+    search_fields = ('title', 'description')
