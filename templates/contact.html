@@ -1,29 +1,53 @@
 {% extends 'base.html' %}
 {% block title %} bytesize interactive | Contact {% endblock %}
 {% block content %}
-<div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <h2 class="text-center mb-4">Contact Us</h2>
+<!-- Two-Column Contact Form Section -->
+<div class="container py-5 vh-50">
+    <div class="row">
+        <!-- Contact Form Column -->
+        <div class="col-md-8 order-md-1 mb-4">
+            <h2>Contact Us</h2>
             <form>
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                <!-- Name Input -->
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                <!-- Email Input -->
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
                 </div>
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                <!-- Subject Input -->
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="subject" placeholder="Enter subject" required>
                 </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
+                <!-- Message Textarea -->
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Type your message here"
+                        required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
+        </div>
+
+        <!-- Information Column -->
+        <div class="col-md-4 order-md-2">
+            <h2>Get in Touch</h2>
+            <p>If you have any questions, feel free to reach out to us at the following contact details:</p>
+            <ul class="list-unstyled">
+                <li><strong>Address:</strong> 1234 Street Name, City, State, ZIP</li>
+                <li><strong>Phone:</strong> (123) 456-7890</li>
+                <li><strong>Email:</strong> info@example.com</li>
+            </ul>
+            <p>We look forward to hearing from you!</p>
+            <!-- Optional Map or Image -->
+            <div class="mt-4">
+                <img src="https://via.placeholder.com/400x200" alt="Location Map" class="img-fluid rounded">
+            </div>
         </div>
     </div>
 </div>
