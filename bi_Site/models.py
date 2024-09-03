@@ -58,3 +58,8 @@ class About(models.Model):
 
     def __str__(self):
         return self.title
+    
+# TODO:
+class UserProfile(models.Model):
+    pass
+
