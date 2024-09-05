@@ -99,6 +99,7 @@
             <img src="https://via.placeholder.com/500x500" class="img-fluid mx-auto" alt="Featurette Image">
         </div>
     </div>
+    <br>
     <hr class="featurette-divider">
     <div class="row featurette">
         <div class="col-md-7 order-md-2">
@@ -111,6 +112,7 @@
             <img src="https://via.placeholder.com/500x500" class="img-fluid mx-auto" alt="Featurette Image">
         </div>
     </div>
+    <br>
     <hr class="featurette-divider">
     <div class="row featurette">
         <div class="col-md-7">
@@ -123,7 +125,62 @@
             <img src="https://via.placeholder.com/500x500" class="img-fluid mx-auto" alt="Featurette Image">
         </div>
     </div>
+    <br>
+    <hr class="featurette-divider">
 </section>
 
+<section class="container text-center py-5">
+    <h1>Testimonials</h1>
+    <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, porro.</p>
+    <br>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                    <div class="testimonial-card text-center">
+                        <img src="https://via.placeholder.com/60" alt="User 1" class="testimonial-image mb-3">
+                        <p class="mb-1"><strong>John Doe</strong></p>
+                        <p class="text-muted">CEO, Example Corp</p>
+                        <p class="fst-italic">"Bootstrap made our development process incredibly easy and efficient.
+                            Highly
+                            recommend it!"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <div class="testimonial-card text-center">
+                        <img src="https://via.placeholder.com/60" alt="User 2" class="testimonial-image mb-3">
+                        <p class="mb-1"><strong>Jane Smith</strong></p>
+                        <p class="text-muted">CTO, Tech Solutions</p>
+                        <p class="fst-italic">"Using Bootstrap allowed us to build a professional-looking website in no
+                            time."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <div class="testimonial-card text-center">
+                        <img src="https://via.placeholder.com/60" alt="User 3" class="testimonial-image mb-3">
+                        <p class="mb-1"><strong>Michael Lee</strong></p>
+                        <p class="text-muted">Designer, Creative Studio</p>
+                        <p class="fst-italic">"Fantastic framework with great flexibility and easy customization
+                            options!"
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
 
 {% endblock content %}
