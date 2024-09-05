@@ -1,7 +1,94 @@
-<footer class="container footer footer-height mx-auto py-5">
-    <p class="float-right"><a href="#">Back to top</a></p>
-    <p>
-        &copy; 2024 bytesize interactive Inc. &middot;
-        <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
-    </p>
+<footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+            <!-- Company Info -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">ManufactureCo</h5>
+                <p>Leading the industry with over 20 years of high-quality manufacturing solutions. We are committed to
+                    innovation, excellence, and customer satisfaction.</p>
+            </div>
+
+            <!-- Useful Links -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Useful Links</h5>
+                <p>
+                    <a href="{% url 'index' %}" class="text-white" style="text-decoration: none;">Home</a>
+                </p>
+                <p>
+                    <a href="{% url 'about' %}" class="text-white" style="text-decoration: none;">About Us</a>
+                </p>
+                <p>
+                    <a href="{% url 'services' %}" class="text-white" style="text-decoration: none;">Services</a>
+                </p>
+                <p>
+                    <a href="{% url 'contact' %}" class="text-white" style="text-decoration: none;">Contact</a>
+                </p>
+            </div>
+
+            <!-- Products -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Services</h5>
+                <p>
+                    <a href="#" class="text-white" style="text-decoration: none;">Product 1</a>
+                </p>
+                <p>
+                    <a href="#" class="text-white" style="text-decoration: none;">Product 2</a>
+                </p>
+                <p>
+                    <a href="#" class="text-white" style="text-decoration: none;">Product 3</a>
+                </p>
+                <p>
+                    <a href="#" class="text-white" style="text-decoration: none;">Product 4</a>
+                </p>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Contact Us</h5>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control mb-3" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control mb-3" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control mb-3" rows="3" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="row align-items-center">
+            <div class="col-md-7 col-lg-8">
+                <p class="pt-4 text-center text-md-left">
+                    &copy; 2024 bytesize interactive, All rights reserved.
+                </p>
+            </div>
+            <div class="col-md-5 col-lg-4">
+                <div class="text-center text-md-right">
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                    class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                    class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                    class="fab fa-google-plus"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                    class="fab fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
