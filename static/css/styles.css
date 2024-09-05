@@ -142,7 +142,29 @@
     color:rgb(214, 205, 205);
 }
 
-.active {
+li > .active  {
     background-color: #0d6efd;
     border-radius: 5px;
+}
+
+.testimonial-card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Customizing the carousel control icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #007bff; /* Change this to any color you prefer */
+    background-size: 50%; /* Resize the icon if needed */
+    border-radius: 50%; /* Optional: makes the icon background circular */
 }
