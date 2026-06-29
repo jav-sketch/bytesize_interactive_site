@@ -2,23 +2,62 @@
 {% block title %} bytesize interactive | Home {% endblock %}
 {% block content %}
 
-<div class="container-fluid p-0">
-    <!-- Fullscreen cover -->
-    <div class="vh-100 d-flex align-items-center justify-content-center text-center bg-dark text-white"
-        style="background-image: url('your-image-url.jpg'); background-size: cover; background-position: center;">
-        <main class="px-3 cover-container">
-            <h3 class="text-uppercase display-5">Welcome to </h3>
-            <h1 class="display-1">bytesize interactive</h1>
-            <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, molestiae! Deserunt
-                esse iusto culpa illum omnis, qui ab molestias corporis voluptatem cum magnam. Rerum laudantium aut
-                porro necessitatibus, earum dolorum.</p>
-            <!-- <a href="#learn-more" class="btn btn-primary btn-lg">Learn More</a> -->
-            <a href="{% url 'services' %}" class="button-pill">
-                Learn More
-            </a>
-        </main>
+<header class="hero text-white">
+    <div class="container py-5">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-7">
+                <span class="badge text-bg-light text-primary mb-3">
+                    IT Solutions on the Essequibo Coast
+                </span>
+
+                <h1 class="display-4 fw-bold mb-4">
+                    Reliable IT, Web, Networking & PC Support for Local Businesses
+                </h1>
+
+                <p class="lead mb-4 text-white-50">
+                    Bytesize Interactive helps businesses and individuals stay connected,
+                    secure, and productive with practical technology solutions tailored to their needs.
+                </p>
+
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="{% url 'contact'%}" class="btn btn-primary btn-lg px-4">
+                        Get a Free Consultation
+                    </a>
+                    <a href="{% url 'services'%}" class="btn btn-outline-light btn-lg px-4">
+                        Explore Services
+                    </a>
+                </div>
+
+                <div class="d-flex flex-wrap gap-3 mt-4 small text-white-50">
+                    <span>✓ Web Development</span>
+                    <span>✓ Networking & CCTV</span>
+                    <span>✓ PC Repairs</span>
+                    <span>✓ IT Consultancy</span>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="hero-card rounded-4 p-4 shadow-lg">
+                    <h2 class="h4 fw-bold mb-3">Need IT help?</h2>
+                    <p class="text-white-50">
+                        Tell us what you need fixed, built, installed, or improved.
+                    </p>
+
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2">✓ Fast diagnostics and support</li>
+                        <li class="mb-2">✓ Business-ready web solutions</li>
+                        <li class="mb-2">✓ Secure network setup</li>
+                        <li class="mb-2">✓ Practical advice before you spend</li>
+                    </ul>
+
+                    <a href="tel:6099680" class="btn btn-light w-100">
+                        Call 609-9680
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+</header>
 
 
 <header class="bg-primary text-white text-center py-5">

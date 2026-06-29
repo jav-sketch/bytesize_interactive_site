@@ -168,3 +168,17 @@ li > .active  {
     background-size: 50%; /* Resize the icon if needed */
     border-radius: 50%; /* Optional: makes the icon background circular */
 }
+ .hero {
+      min-height: 88vh;
+      background:
+        linear-gradient(135deg, rgba(8, 17, 31, .95), rgba(13, 110, 253, .72)),
+        url("hero-it-support.jpg") center / cover no-repeat;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-card {
+      background: rgba(255, 255, 255, .1);
+      border: 1px solid rgba(255, 255, 255, .18);
+      backdrop-filter: blur(14px);
+    }
