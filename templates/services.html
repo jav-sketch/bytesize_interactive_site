@@ -2,73 +2,224 @@
 {% block title %} bytesize interactive | Services {% endblock %}
 
 {% block content %}
-    <div class="container py-5">
-        <h1 class="text-center mb-5">Our Services</h1>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card p-4 text-center">
-                    <div class="service-icon mb-3">
-                        <i class="bi bi-code-slash"></i>
-                    </div>
-                    <h4 class="mb-3">Web Development</h4>
-                    <p>We create robust and scalable web applications tailored to your business needs using the latest
-                        technologies.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card p-4 text-center">
-                    <div class="service-icon mb-3">
-                        <i class="bi bi-phone"></i>
-                    </div>
-                    <h4 class="mb-3">Mobile Development</h4>
-                    <p>Our team develops responsive and user-friendly mobile applications for both Android and iOS
-                        platforms.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card p-4 text-center">
-                    <div class="service-icon mb-3">
-                        <i class="bi bi-palette"></i>
-                    </div>
-                    <h4 class="mb-3">UI/UX Design</h4>
-                    <p>We craft intuitive and engaging user interfaces and experiences that delight your users and drive
-                        engagement.</p>
-                </div>
+<!-- Services Hero -->
+    <header class="services-hero">
+        <div class="container text-center">
+            <span class="badge rounded-pill text-bg-light text-primary px-3 py-2 mb-3">
+                Our Services
+            </span>
+    
+            <h1 class="display-4 fw-bold mb-4">
+                Digital Solutions Built for Growth
+            </h1>
+    
+            <p class="lead mx-auto mb-4" style="max-width: 760px;">
+                We help businesses build stronger online platforms, improve customer experiences,
+                secure their systems, and grow with modern technology.
+            </p>
+    
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="#services" class="btn btn-light btn-lg px-4">Explore Services</a>
+                <a href="#contact" class="btn btn-outline-light btn-lg px-4">Request a Quote</a>
             </div>
         </div>
-        <div class="row mt-4">
-            <div class="col-md-4">
-                <div class="card p-4 text-center">
-                    <div class="service-icon mb-3">
-                        <i class="bi bi-cloud-arrow-up"></i>
+    </header>
+<!-- Services Section -->
+<section id="services" class="services-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="section-badge">
+                <i class="bi bi-stars"></i>
+                What We Offer
+            </span>
+
+            <h2 class="display-6 fw-bold mb-3">Our Professional Services</h2>
+
+            <p class="text-secondary mx-auto" style="max-width: 700px;">
+                Choose from a complete range of digital services designed to help your business
+                look better, work smarter, and grow faster.
+            </p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="services-card">
+                    <div class="services-card-content">
+                        <div class="services-icon">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+
+                        <h3>Web Development</h3>
+
+                        <p>
+                            We create fast, responsive, and scalable websites tailored to your business
+                            goals using modern design and clean development practices.
+                        </p>
+
+                        <a href="#" class="services-link">
+                            Learn more <i class="bi bi-arrow-right"></i>
+                        </a>
                     </div>
-                    <h4 class="mb-3">Cloud Services</h4>
-                    <p>Our cloud solutions ensure your applications are scalable, reliable, and secure, leveraging top cloud
-                        platforms.</p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card p-4 text-center">
-                    <div class="service-icon mb-3">
-                        <i class="bi bi-shield-lock"></i>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="services-card">
+                    <div class="services-card-content">
+                        <div class="services-icon">
+                            <i class="bi bi-phone"></i>
+                        </div>
+
+                        <h3>Mobile Development</h3>
+
+                        <p>
+                            Build user-friendly mobile applications that work smoothly across Android
+                            and iOS devices with a focus on performance and usability.
+                        </p>
+
+                        <a href="#" class="services-link">
+                            Learn more <i class="bi bi-arrow-right"></i>
+                        </a>
                     </div>
-                    <h4 class="mb-3">Cybersecurity</h4>
-                    <p>We provide comprehensive cybersecurity solutions to protect your business from digital threats and
-                        data breaches.</p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card p-4 text-center">
-                    <div class="service-icon mb-3">
-                        <i class="bi bi-bar-chart"></i>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="services-card">
+                    <div class="services-card-content">
+                        <div class="services-icon">
+                            <i class="bi bi-palette"></i>
+                        </div>
+
+                        <h3>UI/UX Design</h3>
+
+                        <p>
+                            We design clean, intuitive interfaces that improve user experience,
+                            increase engagement, and make your brand feel professional.
+                        </p>
+
+                        <a href="#" class="services-link">
+                            Learn more <i class="bi bi-arrow-right"></i>
+                        </a>
                     </div>
-                    <h4 class="mb-3">Digital Marketing</h4>
-                    <p>Our digital marketing services help you reach your target audience and grow your online presence
-                        effectively.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="services-card">
+                    <div class="services-card-content">
+                        <div class="services-icon">
+                            <i class="bi bi-cloud-arrow-up"></i>
+                        </div>
+
+                        <h3>Cloud Services</h3>
+
+                        <p>
+                            We help businesses deploy, manage, and scale cloud-based systems that are
+                            reliable, secure, and ready for future growth.
+                        </p>
+
+                        <a href="#" class="services-link">
+                            Learn more <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="services-card">
+                    <div class="services-card-content">
+                        <div class="services-icon">
+                            <i class="bi bi-shield-lock"></i>
+                        </div>
+
+                        <h3>Cybersecurity</h3>
+
+                        <p>
+                            Protect your business from digital threats with secure systems, best-practice
+                            guidance, monitoring, and data protection strategies.
+                        </p>
+
+                        <a href="#" class="services-link">
+                            Learn more <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="services-card">
+                    <div class="services-card-content">
+                        <div class="services-icon">
+                            <i class="bi bi-megaphone"></i>
+                        </div>
+
+                        <h3>Digital Marketing</h3>
+
+                        <p>
+                            Grow your online presence with targeted digital strategies, search visibility,
+                            social media support, and conversion-focused campaigns.
+                        </p>
+
+                        <a href="#" class="services-link">
+                            Learn more <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</section>
+
+<!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-badge">
+                    <i class="bi bi-diagram-3"></i>
+                    Our Process
+                </span>
+    
+                <h2 class="display-6 fw-bold mb-3">How We Work</h2>
+    
+                <p class="text-secondary mx-auto" style="max-width: 680px;">
+                    A simple process that keeps your project clear, organized, and focused from start to finish.
+                </p>
+            </div>
+    
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="process-box">
+                        <div class="process-number">1</div>
+                        <h4 class="fw-bold">Consultation</h4>
+                        <p class="text-secondary mb-0">
+                            We discuss your goals, challenges, budget, and the best solution for your business.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div class="process-box">
+                        <div class="process-number">2</div>
+                        <h4 class="fw-bold">Planning & Design</h4>
+                        <p class="text-secondary mb-0">
+                            We map out the structure, features, timeline, and design direction before development begins.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div class="process-box">
+                        <div class="process-number">3</div>
+                        <h4 class="fw-bold">Build & Launch</h4>
+                        <p class="text-secondary mb-0">
+                            We develop, test, refine, and launch your solution with support after completion.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 {% endblock %}

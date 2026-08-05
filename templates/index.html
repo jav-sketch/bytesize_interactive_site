@@ -60,65 +60,69 @@
 </header>
 
 
-<header class="bg-primary text-white text-center py-5">
-    <h1>My Bootstrap Template</h1>
-    <p class="lead">A simple template with a six-column layout and featurette section</p>
-</header>
 
 <!-- Five Columns Section -->
-<section class="container  my-5">
-    <div class="row">
-        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-            <div class="card">
-                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
-                <div class="card-body">
-                    <h5 class="card-title">Column 1</h5>
-                    <p class="card-text">Content for column 1.</p>
+<section id="services" class="py-5">
+    <div class="container py-lg-4">
+        <div class="text-center mb-5">
+            <div class="section-kicker mb-2">Our Core Services</div>
+            <h2 class="fw-bold display-6">Technology Solutions That Work</h2>
+            <p class="text-secondary mx-auto" style="max-width: 680px;">
+                From websites to networks and repairs, we provide practical IT support
+                for homes, startups, and growing businesses.
+            </p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm service-card rounded-4">
+                    <div class="card-body p-4">
+                        <div class="service-icon mb-3">💻</div>
+                        <h3 class="h5 fw-bold">Web Development</h3>
+                        <p class="text-secondary">
+                            Custom websites, e-commerce, CMS setup, and responsive designs built for performance.
+                        </p>
+                        <a href="{% url 'contact' %}" class="fw-semibold text-decoration-none">Request a website →</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-            <div class="card">
-                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
-                <div class="card-body">
-                    <h5 class="card-title">Column 2</h5>
-                    <p class="card-text">Content for column 2.</p>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm service-card rounded-4">
+                    <div class="card-body p-4">
+                        <div class="service-icon mb-3">🌐</div>
+                        <h3 class="h5 fw-bold">Networking Solutions</h3>
+                        <p class="text-secondary">
+                            Network setup, maintenance, CCTV installation, and secure infrastructure planning.
+                        </p>
+                        <a href="{% url 'contact' %}" class="fw-semibold text-decoration-none">Improve your network →</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-            <div class="card">
-                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
-                <div class="card-body">
-                    <h5 class="card-title">Column 3</h5>
-                    <p class="card-text">Content for column 3.</p>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm service-card rounded-4">
+                    <div class="card-body p-4">
+                        <div class="service-icon mb-3">🛠️</div>
+                        <h3 class="h5 fw-bold">PC Repairs</h3>
+                        <p class="text-secondary">
+                            Diagnostics, repairs, software installation, virus removal, and hardware upgrades.
+                        </p>
+                        <a href="{% url 'contact' %}" class="fw-semibold text-decoration-none">Fix my computer →</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-            <div class="card">
-                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
-                <div class="card-body">
-                    <h5 class="card-title">Column 4</h5>
-                    <p class="card-text">Content for column 4.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-            <div class="card">
-                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
-                <div class="card-body">
-                    <h5 class="card-title">Column 5</h5>
-                    <p class="card-text">Content for column 5.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-            <div class="card">
-                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
-                <div class="card-body">
-                    <h5 class="card-title">Column 5</h5>
-                    <p class="card-text">Content for column 5.</p>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm service-card rounded-4">
+                    <div class="card-body p-4">
+                        <div class="service-icon mb-3">📊</div>
+                        <h3 class="h5 fw-bold">IT Consultancy</h3>
+                        <p class="text-secondary">
+                            IT strategy, cybersecurity guidance, infrastructure support, and cloud planning.
+                        </p>
+                        <a href="{% url 'contact' %}" class="fw-semibold text-decoration-none">Get advice →</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -126,46 +130,59 @@
 </section>
 
 <!-- Featurette Section -->
-<section class="container my-5">
-    <div class="row featurette">
-        <div class="col-md-7">
-            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your
-                    mind.</span></h2>
-            <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose
-                here.</p>
-        </div>
-        <div class="col-md-5">
-            <img src="https://via.placeholder.com/500x500" class="img-fluid mx-auto" alt="Featurette Image">
+<section id="why-us" class="py-5 bg-light">
+    <div class="container py-lg-4">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-5">
+                <div class="section-kicker mb-2">Why Choose Us</div>
+                <h2 class="fw-bold display-6">Local support. Practical solutions. Long-term value.</h2>
+                <p class="text-secondary">
+                    We do more than fix problems. We help you make smarter technology decisions
+                    so your systems are easier to manage, safer to use, and ready to grow.
+                </p>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+                            <h3 class="h5 fw-bold">Tailored Solutions</h3>
+                            <p class="text-secondary mb-0">
+                                Services designed around your goals, budget, and current setup.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+                            <h3 class="h5 fw-bold">End-to-End Support</h3>
+                            <p class="text-secondary mb-0">
+                                From consultation and setup to troubleshooting and maintenance.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+                            <h3 class="h5 fw-bold">Affordable Pricing</h3>
+                            <p class="text-secondary mb-0">
+                                Professional IT help without unnecessary costs or overcomplicated solutions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+                            <h3 class="h5 fw-bold">Future-Ready Thinking</h3>
+                            <p class="text-secondary mb-0">
+                                We help you solve today’s problems while preparing for tomorrow’s growth.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <br>
-    <hr class="featurette-divider">
-    <div class="row featurette">
-        <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span>
-            </h2>
-            <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this
-                layout would work with some real-world content in place.</p>
-        </div>
-        <div class="col-md-5 order-md-1">
-            <img src="https://via.placeholder.com/500x500" class="img-fluid mx-auto" alt="Featurette Image">
-        </div>
-    </div>
-    <br>
-    <hr class="featurette-divider">
-    <div class="row featurette">
-        <div class="col-md-7">
-            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-            <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
-                intended to be actually read, simply here to give you a better view of what this would look like with
-                some actual content. Your content.</p>
-        </div>
-        <div class="col-md-5">
-            <img src="https://via.placeholder.com/500x500" class="img-fluid mx-auto" alt="Featurette Image">
-        </div>
-    </div>
-    <br>
-    <hr class="featurette-divider">
 </section>
 
 <section class="container text-center py-5">
