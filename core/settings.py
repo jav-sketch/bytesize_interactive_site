@@ -30,8 +30,17 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'bi-site-a8097afc19af.herokuapp.com']
+ALLOWED_HOSTS = [
+    'bytesizeinteractive.com',
+    'www.bytesizeinteractive.com',
+    'bi-site-a8097afc19af.herokuapp.com'
+]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://bytesizeinteractive.com',
+    'https://www.bytesizeinteractive.com',
+    'https://bi-site-a8097afc19af.herokuapp.com'
+]
 
 # Application definition
 
