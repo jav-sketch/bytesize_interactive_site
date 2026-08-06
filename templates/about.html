@@ -1,80 +1,323 @@
 {% extends "base.html" %}
 {% block title %} bytesize interactive | About US {% endblock %}
 {% block content %}
-<header class="bg-primary text-white text-center py-5">
-    <div class="container">
-        <h1 class="display-4">About Us</h1>
-        <p class="lead">Learn more about our company and team.</p>
+<header class="about-hero">
+  <div class="container text-center">
+    <span class="badge rounded-pill text-bg-light text-primary px-3 py-2 mb-3">
+      About Bytesize Interactive
+    </span>
+
+    <h1 class="display-4 fw-bold mb-4">
+      Helping Businesses Build a Smarter Digital Presence
+    </h1>
+
+    <p class="lead mx-auto mb-4" style="max-width: 780px;">
+      Bytesize Interactive creates modern websites, digital solutions, and technology services
+      that help businesses look professional, work efficiently, and grow with confidence.
+    </p>
+
+    <div class="d-flex justify-content-center gap-3 flex-wrap">
+      <a href="{% url 'services' %}" class="btn btn-light btn-lg px-4">View Our Services</a>
+      <a href="{% url 'contact' %}" class="btn btn-outline-light btn-lg px-4">Work With Us</a>
     </div>
+  </div>
 </header>
 
-<section class="py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <h2 class="mb-4">Our Story</h2>
-                <p class="lead">Our company was founded with the mission to provide top-notch services and products to
-                    our clients. Over the years, we have grown from a small startup to a leading player in the industry.
-                </p>
-                <p>Our journey began in [Year] with a small team of passionate individuals. Today, we are proud to have
-                    a diverse and talented team that shares our vision and values. Our commitment to excellence has been
-                    the driving force behind our success, and we continue to strive for innovation and improvement in
-                    everything we do.</p>
-            </div>
+<section class="story-section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <span class="section-badge">
+          <i class="bi bi-info-circle"></i>
+          Who We Are
+        </span>
+
+        <h2 class="display-6 fw-bold mb-4">
+          Practical digital solutions for real business needs.
+        </h2>
+
+        <p class="text-secondary">
+          Bytesize Interactive was built to help individuals, startups, small businesses,
+          organizations, and growing companies create a stronger digital foundation.
+          We focus on clean design, reliable technology, and solutions that are easy to use.
+        </p>
+
+        <p class="text-secondary">
+          Whether you need a simple landing page, a full business website, improved branding,
+          or a custom digital solution, our goal is to make the process simple, professional,
+          and results-focused.
+        </p>
+
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <a href="{% url 'pricing' %}" class="btn btn-primary btn-lg px-4">View Pricing</a>
+          <a href="{% url 'contact' %}" class="btn btn-outline-primary btn-lg px-4">Start a Project</a>
         </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="image-card shadow-lg">
+          <div class="image-card-content">
+            <div class="mb-3">
+              <i class="bi bi-laptop fs-1"></i>
+            </div>
+
+            <h3 class="fw-bold mb-3">Design. Develop. Support.</h3>
+
+            <p class="text-white-50 mb-0">
+              We combine creativity and technology to build websites and digital systems
+              that support your brand, your customers, and your business goals.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
-<section class="bg-light py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <h2 class="mb-4">Our Mission</h2>
-                <p class="lead">Our mission is to deliver high-quality products and services that exceed our clients'
-                    expectations. We aim to build lasting relationships with our clients by providing exceptional value
-                    and support.</p>
-            </div>
+<section class="stats-section">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="stat-box text-center">
+          <div class="stat-icon">
+            <i class="bi bi-window-stack"></i>
+          </div>
+          <h3 class="fw-bold mb-2">Websites</h3>
+          <p class="text-secondary mb-0">
+            Professional websites built for visibility, trust, and growth.
+          </p>
         </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="stat-box text-center">
+          <div class="stat-icon">
+            <i class="bi bi-phone"></i>
+          </div>
+          <h3 class="fw-bold mb-2">Responsive</h3>
+          <p class="text-secondary mb-0">
+            Mobile, tablet, and desktop layouts designed to work everywhere.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="stat-box text-center">
+          <div class="stat-icon">
+            <i class="bi bi-search"></i>
+          </div>
+          <h3 class="fw-bold mb-2">SEO Ready</h3>
+          <p class="text-secondary mb-0">
+            Basic optimization to help your website start with a stronger foundation.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="stat-box text-center">
+          <div class="stat-icon">
+            <i class="bi bi-headset"></i>
+          </div>
+          <h3 class="fw-bold mb-2">Support</h3>
+          <p class="text-secondary mb-0">
+            Clear communication and guidance from planning to launch.
+          </p>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
-<section class="py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <h2 class="mb-4">Our Team</h2>
-                <div class="row">
-                    <div class="col-md-4 text-center">
-                        <img src="https://via.placeholder.com/150" class="rounded-circle mb-3" alt="Team Member 1">
-                        <h5>John Doe</h5>
-                        <p class="text-muted">CEO & Founder</p>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <img src="https://via.placeholder.com/150" class="rounded-circle mb-3" alt="Team Member 2">
-                        <h5>Jane Smith</h5>
-                        <p class="text-muted">Chief Operating Officer</p>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <img src="https://via.placeholder.com/150" class="rounded-circle mb-3" alt="Team Member 3">
-                        <h5>Emily Johnson</h5>
-                        <p class="text-muted">Head of Marketing</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+<section class="values-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-badge">
+        <i class="bi bi-stars"></i>
+        Our Values
+      </span>
+
+      <h2 class="display-6 fw-bold mb-3">What Drives Our Work</h2>
+
+      <p class="text-secondary mx-auto" style="max-width: 720px;">
+        We believe good technology should be clear, useful, reliable, and built around
+        the needs of the people using it.
+      </p>
     </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="value-card">
+          <div class="value-card-content">
+            <div class="value-icon">
+              <i class="bi bi-bullseye"></i>
+            </div>
+
+            <h3 class="fw-bold h4 mb-3">Purposeful Design</h3>
+
+            <p class="text-secondary mb-0">
+              Every layout, section, and feature should support your goals and make it easier
+              for customers to understand your business.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="value-card">
+          <div class="value-card-content">
+            <div class="value-icon">
+              <i class="bi bi-lightning-charge"></i>
+            </div>
+
+            <h3 class="fw-bold h4 mb-3">Performance</h3>
+
+            <p class="text-secondary mb-0">
+              We build with speed, usability, and clean structure in mind so your website
+              feels smooth and professional.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="value-card">
+          <div class="value-card-content">
+            <div class="value-icon">
+              <i class="bi bi-shield-check"></i>
+            </div>
+
+            <h3 class="fw-bold h4 mb-3">Reliability</h3>
+
+            <p class="text-secondary mb-0">
+              From hosting and SSL to responsive design and support, we focus on dependable
+              solutions that businesses can trust.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="value-card">
+          <div class="value-card-content">
+            <div class="value-icon">
+              <i class="bi bi-chat-dots"></i>
+            </div>
+
+            <h3 class="fw-bold h4 mb-3">Clear Communication</h3>
+
+            <p class="text-secondary mb-0">
+              We explain the process in simple terms, keep projects organized, and help you
+              make confident decisions.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="value-card">
+          <div class="value-card-content">
+            <div class="value-icon">
+              <i class="bi bi-brush"></i>
+            </div>
+
+            <h3 class="fw-bold h4 mb-3">Professional Branding</h3>
+
+            <p class="text-secondary mb-0">
+              Your website should reflect your identity, build trust, and leave a strong
+              impression on visitors.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="value-card">
+          <div class="value-card-content">
+            <div class="value-icon">
+              <i class="bi bi-graph-up-arrow"></i>
+            </div>
+
+            <h3 class="fw-bold h4 mb-3">Growth Focus</h3>
+
+            <p class="text-secondary mb-0">
+              We build websites and digital solutions that can grow with your business,
+              services, and future plans.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="bg-light py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center">
-                <h2 class="mb-4">Get in Touch</h2>
-                <p class="lead">We would love to hear from you. Feel free to reach out to us with any questions or
-                    feedback.</p>
-                <a href="{% url 'contact' %}" class="btn btn-primary btn-lg">Contact Us</a>
-            </div>
-        </div>
+<section class="mission-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-badge">
+        <i class="bi bi-compass"></i>
+        Mission & Vision
+      </span>
+
+      <h2 class="display-6 fw-bold mb-3">Our Direction</h2>
+
+      <p class="text-secondary mx-auto" style="max-width: 700px;">
+        We aim to make professional digital services more accessible, practical, and valuable
+        for businesses at every stage.
+      </p>
     </div>
+
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="mission-box">
+          <div class="section-badge">
+            <i class="bi bi-rocket-takeoff"></i>
+            Our Mission
+          </div>
+
+          <h3 class="mb-3">To simplify technology for growing businesses.</h3>
+
+          <p class="text-secondary mb-0">
+            Our mission is to provide professional websites and digital solutions that help
+            businesses improve their visibility, communicate clearly, and operate with greater confidence.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="mission-box">
+          <div class="section-badge">
+            <i class="bi bi-eye"></i>
+            Our Vision
+          </div>
+
+          <h3 class="mb-3">To become a trusted digital partner for modern businesses.</h3>
+
+          <p class="text-secondary mb-0">
+            Our vision is to support businesses with reliable, scalable, and creative digital services
+            that make it easier for them to compete, grow, and serve their customers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section-about-us">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-8">
+        <h2 class="fw-bold mb-3">Ready to work with Bytesize Interactive?</h2>
+        <p class="lead mb-0">
+          Let’s build a professional digital presence that supports your business goals.
+        </p>
+      </div>
+
+      <div class="col-lg-4 text-lg-end">
+        <a href="contact.html" class="btn btn-light btn-lg px-4">
+          Start Your Project
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
 {% endblock %}

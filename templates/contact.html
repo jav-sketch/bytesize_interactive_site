@@ -2,53 +2,287 @@
 {% block title %} bytesize interactive | Contact {% endblock %}
 {% block content %}
 <!-- Two-Column Contact Form Section -->
-<div class="container py-5 vh-50">
-    <div class="row">
-        <!-- Contact Form Column -->
-        <div class="col-md-8 order-md-1 mb-4">
-            <h2>Contact Us</h2>
-            <form>
-                <!-- Name Input -->
-                <div class="mb-3">
-                    <label for="name" class="form-label">Full Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
-                </div>
-                <!-- Email Input -->
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-                </div>
-                <!-- Subject Input -->
-                <div class="mb-3">
-                    <label for="subject" class="form-label">Subject</label>
-                    <input type="text" class="form-control" id="subject" placeholder="Enter subject" required>
-                </div>
-                <!-- Message Textarea -->
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="4" placeholder="Type your message here"
-                        required></textarea>
-                </div>
-                <!-- Submit Button -->
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
+<header class="contact-hero">
+    <div class="container text-center">
+        <span class="badge rounded-pill text-bg-light text-primary px-3 py-2 mb-3">
+            Contact Us
+        </span>
+
+        <h1 class="display-4 fw-bold mb-4">
+            Let’s Build Something Great Together
+        </h1>
+
+        <p class="lead mx-auto mb-4" style="max-width: 780px;">
+            Have a project in mind? Reach out to Bytesize Interactive for website design,
+            digital services, support, or a custom quote.
+        </p>
+
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="#contact-form" class="btn btn-light btn-lg px-4">Send a Message</a>
+            <a href="tel:6099680" class="btn btn-outline-light btn-lg px-4">Call Now</a>
+        </div>
+    </div>
+</header>
+
+<section class="contact-section" id="contact-form">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="section-badge">
+                <i class="bi bi-chat-dots"></i>
+                Get In Touch
+            </span>
+
+            <h2 class="display-6 fw-bold mb-3">Start Your Project Today</h2>
+
+            <p class="text-secondary mx-auto" style="max-width: 720px;">
+                Fill out the form below and we’ll get back to you to discuss your website,
+                business needs, timeline, and best package option.
+            </p>
         </div>
 
-        <!-- Information Column -->
-        <div class="col-md-4 order-md-2">
-            <h2>Get in Touch</h2>
-            <p>If you have any questions, feel free to reach out to us at the following contact details:</p>
-            <ul class="list-unstyled">
-                <li><strong>Address:</strong> 1234 Street Name, City, State, ZIP</li>
-                <li><strong>Phone:</strong> (123) 456-7890</li>
-                <li><strong>Email:</strong> info@example.com</li>
-            </ul>
-            <p>We look forward to hearing from you!</p>
-            <!-- Optional Map or Image -->
-            <div class="mt-4">
-                <img src="https://via.placeholder.com/400x200" alt="Location Map" class="img-fluid rounded">
+        <div class="row g-4 align-items-stretch">
+            <div class="col-lg-5">
+                <div class="contact-card">
+                    <span class="section-badge">
+                        <i class="bi bi-info-circle"></i>
+                        Contact Details
+                    </span>
+
+                    <h2 class="fw-bold mb-3">We’re ready to help.</h2>
+
+                    <p class="text-secondary mb-4">
+                        Contact us for website packages, custom development, digital solutions,
+                        pricing questions, or general enquiries.
+                    </p>
+
+                    <div class="contact-info-box">
+                        <div class="contact-icon">
+                            <i class="bi bi-telephone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:6099680">609-9680</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-box">
+                        <div class="contact-icon">
+                            <i class="bi bi-whatsapp"></i>
+                        </div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/5926099680" target="_blank">Message us on WhatsApp</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-box">
+                        <div class="contact-icon">
+                            <i class="bi bi-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:info@bytesizeinteractive.com">info@bytesizeinteractive.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-box mb-0">
+                        <div class="contact-icon">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>50 Richmond Village, Anna Regina</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="form-card">
+                    <h3 class="fw-bold mb-4">Send Us a Message</h3>
+
+                    <form action="#" method="post">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Your name"
+                                    required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" name="phone"
+                                    placeholder="Your phone number">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="your@email.com" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="service" class="form-label">Service Needed</label>
+                                <select class="form-select" id="service" name="service" required>
+                                    <option value="" selected disabled>Select a service</option>
+                                    <option>Starter Website</option>
+                                    <option>Business Website</option>
+                                    <option>Professional Website</option>
+                                    <option>Custom Website / Web App</option>
+                                    <option>UI/UX Design</option>
+                                    <option>Digital Marketing</option>
+                                    <option>General Enquiry</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="budget" class="form-label">Estimated Budget</label>
+                                <select class="form-select" id="budget" name="budget">
+                                    <option value="" selected disabled>Select a budget range</option>
+                                    <option>GYD $75,000 - Starter Website</option>
+                                    <option>GYD $150,000 - Business Website</option>
+                                    <option>GYD $250,000+ - Professional Website</option>
+                                    <option>Custom Quote Required</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="message" class="form-label">Project Details</label>
+                                <textarea class="form-control" id="message" name="message" rows="6"
+                                    placeholder="Tell us about your project, business, or question..."
+                                    required></textarea>
+                            </div>
+
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary btn-lg w-100">
+                                    Send Message <i class="bi bi-send ms-2"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <p class="text-secondary small mt-3 mb-0">
+                        Replace the form action with your backend, Formspree, Netlify Forms, or email handling service.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</section>
+
+<section class="quick-contact-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="section-badge">
+                <i class="bi bi-lightning-charge"></i>
+                Quick Options
+            </span>
+
+            <h2 class="display-6 fw-bold mb-3">Need a Faster Way to Reach Us?</h2>
+
+            <p class="text-secondary mx-auto" style="max-width: 700px;">
+                Choose the contact method that works best for you.
+            </p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="quick-card text-center">
+                    <div class="quick-icon">
+                        <i class="bi bi-whatsapp"></i>
+                    </div>
+                    <h4 class="fw-bold">WhatsApp</h4>
+                    <p class="text-secondary">
+                        Send a quick message about your project or service request.
+                    </p>
+                    <a href="https://wa.me/5926099680" target="_blank" class="btn btn-outline-primary">
+                        Message Now
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="quick-card text-center">
+                    <div class="quick-icon">
+                        <i class="bi bi-telephone"></i>
+                    </div>
+                    <h4 class="fw-bold">Call Us</h4>
+                    <p class="text-secondary">
+                        Speak directly with us about your website or digital needs.
+                    </p>
+                    <a href="tel:6099680" class="btn btn-outline-primary">
+                        Call 609-9680
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="quick-card text-center">
+                    <div class="quick-icon">
+                        <i class="bi bi-envelope"></i>
+                    </div>
+                    <h4 class="fw-bold">Email</h4>
+                    <p class="text-secondary">
+                        Send project details, questions, or request a written quotation.
+                    </p>
+                    <a href="mailto:info@bytesizeinteractive.com" class="btn btn-outline-primary">
+                        Send Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="map-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="section-badge">
+                <i class="bi bi-geo-alt"></i>
+                Location
+            </span>
+
+            <h2 class="display-6 fw-bold mb-3">Find Us</h2>
+
+            <p class="text-secondary mx-auto" style="max-width: 680px;">
+                Bytesize Interactive is available to support clients locally and online.
+            </p>
+        </div>
+
+        <div class="map-card">
+            <div>
+                <i class="bi bi-map fs-1 mb-3 d-block"></i>
+                <h3 class="fw-bold">50 Richmond Village, Anna Regina</h3>
+                <p class="text-white-50 mb-0">
+                    Add your Google Maps embed here when ready.
+                </p>
+            </div>
+        </div>
+
+        <!-- Replace the map-card above with a Google Maps iframe when available:
+    <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow">
+      <iframe src="YOUR_GOOGLE_MAPS_EMBED_LINK" allowfullscreen loading="lazy"></iframe>
+    </div>
+    -->
+    </div>
+</section>
+
+<section class="cta-section-contact">
+    <div class="container">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-8">
+                <h2 class="fw-bold mb-3">Ready to start your website?</h2>
+                <p class="lead mb-0">
+                    Choose a package or request a custom quote for your business.
+                </p>
+            </div>
+
+            <div class="col-lg-4 text-lg-end">
+                <a href="pricing.html" class="btn btn-light btn-lg px-4">
+                    View Pricing
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock %}

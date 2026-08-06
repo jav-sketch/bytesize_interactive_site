@@ -1,76 +1,313 @@
 {% extends 'base.html' %}
 {% block title %} bytesize interactive | Pricing {% endblock %}
 {% block content %}
-<div class="container py-5">
-    <div class="pricing-header">
-        <h1 class="display-4">Our Pricing Plans</h1>
-        <p class="lead">Choose a plan that suits your needs and budget. We offer flexible and affordable pricing options
-            for businesses of all sizes.</p>
-    </div>
+<header class="pricing-hero">
+    <div class="container text-center">
+        <span class="badge rounded-pill text-bg-light text-primary px-3 py-2 mb-3">
+            Website Packages
+        </span>
 
-    <div class="row">
-        <!-- Basic Plan -->
-        <div class="col-lg-4 mb-4">
-            <div class="card">
-                <div class="card-header text-center">
-                    <h4 class="card-title">Basic</h4>
-                    <h5 class="card-price">$9<span class="period">/mo</span></h5>
-                </div>
-                <div class="card-body">
-                    <ul>
-                        <li>10 GB Storage</li>
-                        <li>100 GB Bandwidth</li>
-                        <li>Email Support</li>
-                        <li>24/7 Customer Service</li>
-                    </ul>
-                    <div class="d-grid">
-                        <a href="{% url 'signup' %}" class="btn btn-primary btn-block">Sign Up</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <h1 class="display-4 fw-bold mb-4">
+            Simple Website Pricing for Every Stage of Business
+        </h1>
 
-        <!-- Standard Plan -->
-        <div class="col-lg-4 mb-4">
-            <div class="card">
-                <div class="card-header text-center">
-                    <h4 class="card-title">Standard</h4>
-                    <h5 class="card-price">$29<span class="period">/mo</span></h5>
-                </div>
-                <div class="card-body">
-                    <ul>
-                        <li>100 GB Storage</li>
-                        <li>1 TB Bandwidth</li>
-                        <li>Priority Email Support</li>
-                        <li>24/7 Customer Service</li>
-                    </ul>
-                    <div class="d-grid">
-                        <a href="#" class="btn btn-primary btn-block">Get Started</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <p class="lead mx-auto mb-4" style="max-width: 780px;">
+            Choose a professional website package that fits your goals, budget, and growth plans.
+            Every package includes hosting, domain, SSL, responsive design, and essential setup.
+        </p>
 
-        <!-- Premium Plan -->
-        <div class="col-lg-4 mb-4">
-            <div class="card">
-                <div class="card-header text-center">
-                    <h4 class="card-title">Premium</h4>
-                    <h5 class="card-price">$49<span class="period">/mo</span></h5>
-                </div>
-                <div class="card-body">
-                    <ul>
-                        <li>1 TB Storage</li>
-                        <li>Unlimited Bandwidth</li>
-                        <li>Phone & Email Support</li>
-                        <li>24/7 Premium Support</li>
-                    </ul>
-                    <div class="d-grid">
-                        <a href="#" class="btn btn-primary btn-block">Join Now</a>
-                    </div>
-                </div>
-            </div>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="#pricing" class="btn btn-light btn-lg px-4">View Packages</a>
+            <a href="contact.html" class="btn btn-outline-light btn-lg px-4">Request a Quote</a>
         </div>
     </div>
-</div>
+</header>
+
+<section id="pricing" class="pricing-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="section-badge">
+                <i class="bi bi-tags"></i>
+                Pricing Plans
+            </span>
+
+            <h2 class="display-6 fw-bold mb-3">Choose Your Website Package</h2>
+
+            <p class="text-secondary mx-auto" style="max-width: 720px;">
+                Whether you need a simple landing page, a full business website, or a larger professional platform,
+                Bytesize Interactive has a package designed to get you online with confidence.
+            </p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+
+            <!-- Starter Website -->
+            <div class="col-lg-4">
+                <div class="pricing-card">
+                    <div class="pricing-icon">
+                        <i class="bi bi-window"></i>
+                    </div>
+
+                    <h3 class="fw-bold mb-2">Starter Website</h3>
+
+                    <div class="price">
+                        GYD $75,000
+                    </div>
+
+                    <p>
+                        Ideal for individuals, startups, small businesses, and promotional landing pages.
+                    </p>
+
+                    <ul class="feature-list">
+                        <li><i class="bi bi-check-circle-fill"></i> 1 professionally designed webpage</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Mobile-responsive design</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Custom domain name — FREE for 1 year</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Web hosting — FREE for 1 year</li>
+                        <li><i class="bi bi-check-circle-fill"></i> SSL certificate — FREE for 1 year</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Contact/WhatsApp integration</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Social media links</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Basic SEO setup</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Google Maps integration where required</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Professional layout and branding</li>
+                    </ul>
+
+                    <a href="{% url 'contact' %}" class="btn btn-outline-primary btn-lg w-100">
+                        Choose Starter
+                    </a>
+                </div>
+            </div>
+
+            <!-- Business Website -->
+            <div class="col-lg-4">
+                <div class="pricing-card featured">
+                    <span class="popular-badge">Most Popular</span>
+
+                    <div class="pricing-icon">
+                        <i class="bi bi-briefcase"></i>
+                    </div>
+
+                    <h3 class="fw-bold mb-2">Business Website</h3>
+
+                    <div class="price">
+                        GYD $150,000
+                    </div>
+
+                    <p>
+                        Ideal for established businesses, organizations, and professional services.
+                    </p>
+
+                    <ul class="feature-list">
+                        <li><i class="bi bi-check-circle-fill"></i> 1–4 custom-designed pages</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Home, About, Services, Contact or equivalent pages
+                        </li>
+                        <li><i class="bi bi-check-circle-fill"></i> Mobile, tablet and desktop optimization</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Custom domain name — FREE for 1 year</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Web hosting — FREE for 1 year</li>
+                        <li><i class="bi bi-check-circle-fill"></i> SSL certificate — FREE for 1 year</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Contact forms</li>
+                        <li><i class="bi bi-check-circle-fill"></i> WhatsApp integration</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Social media integration</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Google Maps</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Basic SEO optimization</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Professional branded design</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Basic website analytics setup</li>
+                    </ul>
+
+                    <a href="{% url 'contact' %}" class="btn btn-primary btn-lg w-100">
+                        Choose Business
+                    </a>
+                </div>
+            </div>
+
+            <!-- Professional Website -->
+            <div class="col-lg-4">
+                <div class="pricing-card">
+                    <div class="pricing-icon">
+                        <i class="bi bi-buildings"></i>
+                    </div>
+
+                    <h3 class="fw-bold mb-2">Professional Website</h3>
+
+                    <div class="price">
+                        <small>Starting at</small><br>
+                        GYD $250,000
+                    </div>
+
+                    <p>
+                        Ideal for companies, institutions, media organizations, and businesses requiring a larger online
+                        presence.
+                    </p>
+
+                    <ul class="feature-list">
+                        <li><i class="bi bi-check-circle-fill"></i> 5+ professionally designed pages</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Custom website design</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Mobile, tablet and desktop optimization</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Custom domain name — FREE for 1 year</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Web hosting — FREE for 1 year</li>
+                        <li><i class="bi bi-check-circle-fill"></i> SSL certificate — FREE for 1 year</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Contact and enquiry forms</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Social media integration</li>
+                        <li><i class="bi bi-check-circle-fill"></i> WhatsApp integration</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Google Maps</li>
+                        <li><i class="bi bi-check-circle-fill"></i> SEO optimization</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Website analytics</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Enhanced navigation</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Content sections tailored to the business</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Scalable website architecture</li>
+                    </ul>
+
+                    <a href="{% url 'contact' %}" class="btn btn-outline-primary btn-lg w-100">
+                        Request Quote
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="included-section-pricing">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="section-badge">
+                <i class="bi bi-gift"></i>
+                Included With Every Package
+            </span>
+
+            <h2 class="display-6 fw-bold mb-3">All Packages Include</h2>
+
+            <p class="text-secondary mx-auto" style="max-width: 680px;">
+                Every website package comes with the essential tools needed to launch a professional,
+                secure, and mobile-friendly online presence.
+            </p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="included-box">
+                    <div class="included-icon">
+                        <i class="bi bi-hdd-network"></i>
+                    </div>
+                    <h4 class="fw-bold">1 Year Web Hosting</h4>
+                    <p class="text-secondary mb-0">
+                        Reliable web hosting included free for your first year.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="included-box">
+                    <div class="included-icon">
+                        <i class="bi bi-globe2"></i>
+                    </div>
+                    <h4 class="fw-bold">1 Year Custom Domain</h4>
+                    <p class="text-secondary mb-0">
+                        Your custom website domain is included free for the first year.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="included-box">
+                    <div class="included-icon">
+                        <i class="bi bi-shield-lock"></i>
+                    </div>
+                    <h4 class="fw-bold">1 Year SSL Certificate</h4>
+                    <p class="text-secondary mb-0">
+                        SSL security included to help protect your website visitors.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="included-box">
+                    <div class="included-icon">
+                        <i class="bi bi-phone"></i>
+                    </div>
+                    <h4 class="fw-bold">Responsive Mobile Design</h4>
+                    <p class="text-secondary mb-0">
+                        Your website will look great on mobile, tablet, and desktop screens.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="included-box">
+                    <div class="included-icon">
+                        <i class="bi bi-lightning-charge"></i>
+                    </div>
+                    <h4 class="fw-bold">Performance Optimization</h4>
+                    <p class="text-secondary mb-0">
+                        Built with speed, usability, and clean structure in mind.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="included-box">
+                    <div class="included-icon">
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <h4 class="fw-bold">Basic SEO Setup</h4>
+                    <p class="text-secondary mb-0">
+                        Basic search optimization to help your website start with a stronger foundation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="addons-section-pricing">
+    <div class="container">
+        <div class="addons-card">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-8">
+                    <span class="section-badge">
+                        <i class="bi bi-plus-circle"></i>
+                        Custom Functionality
+                    </span>
+
+                    <h2 class="fw-bold mb-3">Need More Than a Standard Website?</h2>
+
+                    <p class="text-secondary mb-0">
+                        Additional functionality such as e-commerce, online payments, customer accounts,
+                        booking systems, dashboards, APIs, databases, membership systems, or custom web
+                        applications should be quoted separately.
+                    </p>
+                </div>
+
+                <div class="col-lg-4 text-lg-end">
+                    <a href="{% url 'contact' %}" class="btn btn-primary btn-lg px-4">
+                        Request Custom Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-primary mt-4 mb-0 rounded-4 border-0">
+            <i class="bi bi-info-circle me-2"></i>
+            After the first year, hosting and domain renewal will be billed annually.
+        </div>
+    </div>
+</section>
+
+<section class="cta-section-pricing">
+    <div class="container">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-8">
+                <h2 class="fw-bold mb-3">Ready to build your website?</h2>
+                <p class="lead mb-0">
+                    Start with a professional website package that fits your current business needs.
+                </p>
+            </div>
+
+            <div class="col-lg-4 text-lg-end">
+                <a href="{% url 'contact' %}" class="btn btn-light btn-lg px-4">
+                    Get Started Today
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock %}
